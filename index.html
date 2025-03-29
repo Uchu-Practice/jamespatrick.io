@@ -11,6 +11,7 @@
      <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- NAVIGATION -->
     <nav id="desktop-nav">
       <div class="logo">James Patrick</div>
       <div>
@@ -36,9 +37,10 @@
         </div>
       </div>
     </nav>
+    <!-- HERE SECTION -->
     <section id="profile">
       <div class="section-pic-container">
-        <img src="/assets/profile-pic.png" alt="James Patrick profile picture"/>
+        <img src="./assets/profile-pic.png" alt="James Patrick profile picture"/>
       </div>
       <div class="section-text">
         <p class="section-text-p1">Hello I'm</p>
@@ -47,9 +49,18 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('assets/resume-example.pdf', '_blank')">
+            onclick="window.open('./assets/resume-example.pdf', '_blank')">
             Download CV
           </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='#contact'">
+            Contact Info
+          </button>
+          <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="social-icon" onclick="window.open('https://www.linkedin.com/in/james-patrick-works/', '_blank')"/>
+            <img src="./assets/github.png" alt="My Instagram profile" class="social-icon" onclick="window.open('https://www.instagram.com/uchu_james/', '_blank')"/>
+          </div>
         </div>  
       </div>
   </body>
