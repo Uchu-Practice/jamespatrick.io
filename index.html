@@ -24,17 +24,33 @@
     <nav id="hamburger-nav">
       <div class="logo">James Patrick</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
         </div>
       </div>
     </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="/assets/profile-pic.png" alt="James Patrick profile picture"/>
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello I'm</p>
+        <h1 class="title">James Patrick</h1>
+        <p class="section-text-p2">Product Leader | UX Mentor</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/resume-example.pdf', '_blank')">
+            Download CV
+          </button>
+        </div>  
+      </div>
   </body>
 </html>

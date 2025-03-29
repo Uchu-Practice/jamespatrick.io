@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,22 +21,20 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
+  align-items: center;;
 }
 
 nav {
   justify-content: space-around;
-  align-items: center;
   height: 16vh;
 }
 
@@ -48,7 +47,6 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
@@ -59,10 +57,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 1.7rem
-}
-
-.logo:hover {
+  font-size: 1.7rem;
   cursor: default;
 }
 
@@ -101,7 +96,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +106,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -133,7 +128,7 @@ a:hover {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
-
+/* 
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -144,4 +139,4 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
-}
+} */
